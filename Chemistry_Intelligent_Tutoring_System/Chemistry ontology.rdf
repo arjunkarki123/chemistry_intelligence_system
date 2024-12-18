@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10/"
+     xml:base="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#affectsEntropy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#affectsEntropy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#hasEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#hasEnergy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#hasEnergyAmount -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#hasEnergyAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#hasState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#hasTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#hasTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#State"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#transfersEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#transfersEnergy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#undergoesProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#undergoesProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Adiabatic_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Adiabatic_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Closed_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Closed_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Cyclic_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Cyclic_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy_Change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy_Change">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy_Increase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy_Increase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Final_State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Final_State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#First_Law_of_Thermodynamics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#First_Law_of_Thermodynamics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Laws_of_Thermodynamics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Heat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Heat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Initial_State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Initial_State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Internal_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Internal_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isobaric_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isobaric_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isochoric_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isochoric_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isolated_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isolated_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isothermal_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isothermal_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#KineticEnergy1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#KineticEnergy1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Kinetic_Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Kinetic_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Kinetic_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#LatentHeat1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#LatentHeat1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Latent_Heat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Latent_Heat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Latent_Heat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Heat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Laws_of_Thermodynamics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Laws_of_Thermodynamics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Mechanical_Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Mechanical_Work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Open_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Open_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Potential_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Potential_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Process"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Second_Law_of_Thermodynamics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Second_Law_of_Thermodynamics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Laws_of_Thermodynamics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Sensible_Heat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Sensible_Heat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Heat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#State"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Thermal_Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Thermal_Work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Thermodynamic_state -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Thermodynamic_state">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Third_Law_of_Thermodynamics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Third_Law_of_Thermodynamics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Laws_of_Thermodynamics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Zeroth_Law_of_Thermodynamics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Zeroth_Law_of_Thermodynamics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Laws_of_Thermodynamics"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#AdiabaticProcess1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#AdiabaticProcess1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Adiabatic_Process"/>
+        <untitled-ontology-10:undergoesProcess rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ClosedSystem1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ClosedSystem1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ClosedSystem1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Closed_System"/>
+        <untitled-ontology-10:hasState rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermodynamicState1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#CyclicProcess1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#CyclicProcess1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Cyclic_Process"/>
+        <untitled-ontology-10:undergoesProcess rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#OpenSystem1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#EntropyChange1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#EntropyChange1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy_Change"/>
+        <untitled-ontology-10:affectsEntropy rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsothermalProcess1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#EntropyIncrease1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#EntropyIncrease1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Entropy_Increase"/>
+        <untitled-ontology-10:affectsEntropy rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#AdiabaticProcess1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#FinalState1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#FinalState1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Final_State"/>
+        <untitled-ontology-10:hasTemperature rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#310_K"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#FirstLaw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#FirstLaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#First_Law_of_Thermodynamics"/>
+        <untitled-ontology-10:affectsEntropy rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermodynamicState1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#InitialState1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#InitialState1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Initial_State"/>
+        <untitled-ontology-10:hasTemperature rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#298_K"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#InternalEnergy1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#InternalEnergy1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Internal_Energy"/>
+        <untitled-ontology-10:hasEnergyAmount rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#1500_J"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsobaricProcess1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsobaricProcess1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isobaric_Process"/>
+        <untitled-ontology-10:undergoesProcess rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ClosedSystem1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsochoricProcess1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsochoricProcess1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isochoric_Process"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsolatedSystem1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsolatedSystem1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isolated_System"/>
+        <untitled-ontology-10:hasState rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermodynamicState1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsothermalProcess1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsothermalProcess1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Isothermal_Process"/>
+        <untitled-ontology-10:undergoesProcess rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ClosedSystem1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#MechanicalWork1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#MechanicalWork1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Mechanical_Work"/>
+        <untitled-ontology-10:transfersEnergy rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermalWork1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#OpenSystem1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#OpenSystem1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Open_System"/>
+        <untitled-ontology-10:hasState rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#InitialState1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#PotentialEnergy1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#PotentialEnergy1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Potential_Energy"/>
+        <untitled-ontology-10:hasEnergyAmount rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#500_J"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#SecondLaw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#SecondLaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Second_Law_of_Thermodynamics"/>
+        <untitled-ontology-10:affectsEntropy rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#IsothermalProcess1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#SensibleHeat1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#SensibleHeat1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Sensible_Heat"/>
+        <untitled-ontology-10:hasEnergyAmount rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#1000_J"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermalWork1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermalWork1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Thermal_Work"/>
+        <untitled-ontology-10:transfersEnergy rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#MechanicalWork1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermodynamicState1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermodynamicState1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Thermodynamic_state"/>
+        <untitled-ontology-10:hasTemperature rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#300_K"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThirdLaw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThirdLaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Third_Law_of_Thermodynamics"/>
+        <untitled-ontology-10:affectsEntropy rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ClosedSystem1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ZerothLaw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ZerothLaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#Zeroth_Law_of_Thermodynamics"/>
+        <untitled-ontology-10:affectsEntropy rdf:resource="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#ThermodynamicState1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#1000_J -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#1000_J"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#1500_J -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#1500_J"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#298_K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#298_K"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#300_K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#300_K"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#310_K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#310_K"/>
+    
+
+
+    <!-- http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#500_J -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-10#500_J"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

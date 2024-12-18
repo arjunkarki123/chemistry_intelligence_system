@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry RDF Ontology Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        // Function to show a "Coming Soon" message when a class is clicked
+        function showComingSoon(className) {
+            alert("The page for " + className + " is under construction. Stay tuned!");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chemistry RDF Ontology Viewer</h1>
+            <p>Explore the chemistry ontology's different classes and their details in a hierarchical structure.</p>
+        </header>
+
+        <div class="ontology-hierarchy">
+            {% for parent, classes in ontology_structure.items() %}
+                <div class="parent-class">
+                    <h2>{{ parent.split('#')[-1] }}</h2>
+                    <div class="cards">
+                        {% for item in classes %}
+                            <div class="card" onclick="showComingSoon('{{ item['label'] }}')">
+                                <span>{{ item['label'] }}</span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by Flask & RDFLib | RDF Chemistry Ontology Viewer</p>
+    </footer>
+</body>
+</html>

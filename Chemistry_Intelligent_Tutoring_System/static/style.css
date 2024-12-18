@@ -1,0 +1,130 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f3e8;
+    /* Light beige background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    box-sizing: border-box;
+    color: #5c3f21;
+    /* Dark brown text color */
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    background-color: #fff;
+    /* White background */
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Header style */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 45px;
+    color: #6a4e23;
+    /* Dark brown color */
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 18px;
+    color: #8a5c3e;
+    /* Lighter brown color */
+    font-style: italic;
+}
+
+/* Ontology hierarchy styling */
+.ontology-hierarchy {
+    margin-top: 40px;
+}
+
+/* Category layout */
+.parent-class {
+    background-color: #fff8e1;
+    /* Light cream background */
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Slight shadow */
+    border: 2px solid #d1b29d;
+    /* Border color matching */
+}
+
+.parent-class h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #6a4e23;
+    margin-bottom: 20px;
+}
+
+/* Styling for individual cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: #d1b29d;
+    /* Light brown background */
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #b78f6b;
+    /* Darker brown on hover */
+    transform: translateY(-10px);
+    /* Lift effect */
+}
+
+.card span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Coming Soon message styling */
+.card:active {
+    background-color: #ff8a80;
+    /* Light red background when clicked */
+    transform: translateY(5px);
+    /* Slight downward movement */
+}
+
+/* Responsive Design: For smaller screens, stack cards vertically */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #6a4e23;
+    padding-top: 20px;
+    font-style: italic;
+}
